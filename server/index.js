@@ -1,14 +1,50 @@
 /**
  * Non Global Module import
  */
-const colors = require('colors');
-const http = require('http');
+// const http = require('http');
+// const colors = require('colors');
+const express = require('express');
 
+/**
+ * Local Module import
+ */
+const dbConnect = require('./mongodb');
+
+/**
+ * Way 1
+ */
+// dbConnect().then((res)=>{
+//     res.find({}).toArray().then((data)=>{
+//         console.log(data);
+//     })
+// })
+
+/**
+ * Way 2
+ */
+
+const main = async ()=>{
+    let data = await dbConnect();
+    data = await data.find({}).toArray();
+    console.log(data);
+}
+
+main();
+
+/**
+ * Express JS initialisation
+ */
+const app = express();
+
+app.get('/home',(req,res)=>{
+    res.send("hello");
+});
+app.listen(4201);
 
 /**
  * Simple REST API
  */
-
+/*
 http.createServer((request,response)=>{
     response.writeHead(200,{
         'Content-Type':'application/json'
@@ -19,3 +55,4 @@ http.createServer((request,response)=>{
     }));
     response.end();
 }).listen(4201);
+*/
