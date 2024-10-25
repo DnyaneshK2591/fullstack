@@ -1,27 +1,20 @@
-# Fullstack
+# NODE JS REST API
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+We can create REST API using NODE JS. 
 
-## Development server
+NODE JS uses JavaScript as programming language. It is used for server side scripting purposes. It works on V8 Engine.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# MongoDB
 
-## Code scaffolding
+Mongo DB is NO SQL database. Everything in Mongo DB is in the form of document i.e. BSON/JSON
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Simple Mongo DB - Schema less
+Mongoose - We can define schema in this
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Packages Used
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Express JS - to simplify node js programming
+2. Mongo DB - schema less api creattion 
+3. Mongoose - schema based api creation
+4. Multer - multipart i.e. file upload functionality
