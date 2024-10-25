@@ -8,7 +8,7 @@ const express = require('express');
 /**
  * Local Module import
  */
-const dbConnect = require('./mongodb');
+const dbConnect = require('./config_mongodb');
 
 /**
  * Way 1
@@ -23,11 +23,11 @@ const dbConnect = require('./mongodb');
  * Way 2
  */
 
-const main = async ()=>{
-    let data = await dbConnect();
-    data = await data.find({}).toArray();
-    console.log(data);
-}
+const main = async () => {
+  let data = await dbConnect();
+  data = await data.find({}).toArray();
+  console.log(data);
+};
 
 main();
 
@@ -36,8 +36,8 @@ main();
  */
 const app = express();
 
-app.get('/home',(req,res)=>{
-    res.send("hello");
+app.get('/home', (req, res) => {
+  res.send('hello');
 });
 app.listen(4201);
 
