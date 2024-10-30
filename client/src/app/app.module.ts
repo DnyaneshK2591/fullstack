@@ -9,10 +9,24 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { MatCardModule } from '@angular/material/card';
-import { HttpClientModule } from "@angular/common/http"
+import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './dashboard/dashboard.component';
 @NgModule({
-  declarations: [AppComponent, HomeviewComponent,NavBarComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,HttpClientModule,MatToolbarModule,MatButtonModule,MatCardModule],
+  declarations: [
+    AppComponent,
+    HomeviewComponent,
+    NavBarComponent,
+    DashboardComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatCardModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

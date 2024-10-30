@@ -3,10 +3,9 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class RestapiService {
-
   private apiurl = 'http://localhost:4201/';
   constructor(private http: HttpClient) {}
 
