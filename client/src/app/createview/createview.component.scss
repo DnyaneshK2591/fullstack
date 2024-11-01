@@ -1,19 +1,21 @@
 .home-view {
-    padding: 20px;
-    //background-color: gray;
-  }
-  
-  .card-view {
-    //width: 80%;
-    //margin: 60px 15% 10px 15%;
-    margin-bottom: 12px;
-  }
-  
-  .image-view {
-    height: 100%;
-    width: 100%;
-  }
-  .link-view {
-    z-index: 0;
-  }
-  
+  padding: 20px;
+}
+
+.card-view {
+  margin-bottom: 12px;
+}
+
+.image-view {
+  height: 100%;
+  width: 100%;
+}
+.link-view {
+  z-index: 0;
+}
+.create-post-form{
+  width: 100%;
+}
+.heading-full-width{
+  width: 100%;
+}
