@@ -18,4 +18,10 @@ export class HomeviewComponent {
       console.log(data);
     });
   }
+  onDelete(_id: any){
+    console.log(_id)
+    this.restapiService.deletePost(_id).subscribe((response)=>{
+      console.log(response);
+    });
+  }
 }

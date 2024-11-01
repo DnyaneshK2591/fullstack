@@ -12,4 +12,12 @@ export class RestapiService {
   fetchTopHeadlines(): Observable<any> {
     return this.http.get<any>(this.apiurl);
   }
+
+  createPost(post:any): Observable<any> {
+    return this.http.post<any>(this.apiurl,post);
+  }
+
+  deletePost(id:any):Observable<any>{
+    return this.http.delete<any>(this.apiurl+id,id)
+  }
 }

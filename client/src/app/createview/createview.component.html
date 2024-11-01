@@ -4,22 +4,26 @@
       <mat-card-title>Create Post</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-      <form class="create-post-form">
+      <form class="create-post-form" [formGroup]="createPost" (ngSubmit)="onSubmit()">
         <mat-form-field class="heading-full-width">
           <mat-label>Enter heading of post ... </mat-label>
-          <textarea matInput placeholder="Ex. Heading text that explains post in single line ..."></textarea>
+          <textarea matInput placeholder="Ex. Heading text that explains post in single line ..." formControlName="heading"></textarea>
         </mat-form-field>
         <mat-form-field class="heading-full-width">
-          <mat-label>Enter heading of post ... </mat-label>
-          <textarea matInput placeholder="Ex. Heading text that explains post in single line ..."></textarea>
+          <mat-label>Enter subheading of post ... </mat-label>
+          <textarea matInput placeholder="Ex. Sub Heading text that explains post in single line ..." formControlName="subheading"></textarea>
+        </mat-form-field>
+        <mat-form-field class="heading-full-width">
+          <mat-label>Enter description of post ... </mat-label>
+          <textarea matInput placeholder="Ex. Description text that explains post in single line ..." formControlName="description"></textarea>
         </mat-form-field>
         <mat-form-field class="heading-full-width">
           <mat-label>Image Source</mat-label>
-          <input matInput placeholder="Ex. imageurl" value="">
+          <input matInput placeholder="Ex. imageurl" value="" formControlName="image">
         </mat-form-field>
         <mat-form-field class="heading-full-width">
           <mat-label>Author name</mat-label>
-          <input matInput placeholder="Ex. Robinhood" value="Dnyaneshwar K">
+          <input matInput placeholder="Ex. Robinhood" value="Dnyaneshwar K" formControlName="author">
         </mat-form-field>
         <button class="heading-full-width" mat-flat-button>Submit</button>
       </form>
